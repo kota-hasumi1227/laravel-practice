@@ -26,7 +26,7 @@ class StoreUser extends FormRequest
         return [
             'last_name' => 'required|max:255',
             'first_name' => 'required|max:255',
-            'birthday' => 'required|max:255',
+            'birthday' => 'required|date_format:Ymd',
             'gender' => 'required|max:255',
             'note' => 'nullable|max:1024',
         ];
